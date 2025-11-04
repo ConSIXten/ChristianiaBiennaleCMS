@@ -1,0 +1,218 @@
+Christiania Biennale CMS - Complete Directory Structure
+========================================================
+
+This is the complete file structure of your WordPress CMS project.
+Files marked with * are included in this repository.
+
+ChristianiaBiennaleCMS/
+│
+├── * README.md                          # Main project documentation
+├── * WORDPRESS_SETUP.md                 # Complete WordPress setup guide
+├── * HTDOCS_STRUCTURE.md                # htdocs file placement guide
+├── * QUICK_START.md                     # Quick start guide
+├── * DIRECTORY_TREE.txt                 # This file
+├── * .gitignore                         # Git ignore rules
+├── * docker-compose.yml                 # Docker setup for local development
+│
+└── * wp-content/                        # WordPress content (YOUR FILES)
+    │
+    ├── * themes/                        # WordPress themes directory
+    │   └── * christiania-biennale/      # Your custom theme
+    │       │
+    │       ├── * README.md              # Theme documentation
+    │       ├── * style.css              # Main stylesheet with theme metadata (REQUIRED)
+    │       ├── * functions.php          # Theme functions and setup
+    │       ├── * index.php              # Main template file (REQUIRED)
+    │       ├── * header.php             # Header template
+    │       ├── * footer.php             # Footer template
+    │       ├── * sidebar.php            # Sidebar template
+    │       ├── * single.php             # Single post template
+    │       ├── * page.php               # Page template
+    │       │
+    │       ├── * assets/                # Theme assets
+    │       │   ├── * css/
+    │       │   │   └── * custom.css     # Custom CSS
+    │       │   ├── * js/
+    │       │   │   └── * main.js        # Main JavaScript
+    │       │   └── images/              # Theme images (empty - add your images)
+    │       │
+    │       ├── * template-parts/        # Reusable template components
+    │       │   ├── * content.php        # Default post content template
+    │       │   ├── * content-single.php # Single post content template
+    │       │   ├── * content-page.php   # Page content template
+    │       │   └── * content-none.php   # No content found template
+    │       │
+    │       └── includes/                # PHP helper functions (empty - add as needed)
+    │
+    └── * plugins/                       # WordPress plugins directory
+        └── * christiania-biennale-functionality/  # Your custom plugin
+            │
+            ├── * README.md              # Plugin documentation
+            ├── * christiania-biennale-functionality.php  # Main plugin file
+            │
+            ├── * includes/              # Plugin includes
+            │   ├── * post-types.php     # Custom post type definitions
+            │   └── * taxonomies.php     # Custom taxonomy definitions
+            │
+            └── assets/                  # Plugin assets (empty - add as needed)
+                ├── css/
+                └── js/
+
+
+Additional WordPress Files (NOT in repository - install WordPress first):
+==========================================================================
+
+After you install WordPress, your directory will also contain:
+
+christiania-biennale/                    # Your htdocs WordPress installation
+│
+├── wp-admin/                            # WordPress admin (DON'T MODIFY)
+│   └── (WordPress core admin files)
+│
+├── wp-includes/                         # WordPress core (DON'T MODIFY)
+│   └── (WordPress core functions)
+│
+├── wp-content/                          # Your custom content
+│   ├── themes/                          # Contains your custom theme
+│   │   ├── christiania-biennale/        # ← Copy from this repo
+│   │   └── (default themes...)          # WordPress default themes
+│   │
+│   ├── plugins/                         # Contains your custom plugin
+│   │   ├── christiania-biennale-functionality/  # ← Copy from this repo
+│   │   └── (default plugins...)         # WordPress default plugins
+│   │
+│   └── uploads/                         # Media uploads (auto-generated)
+│       ├── 2024/
+│       │   ├── 01/
+│       │   ├── 02/
+│       │   └── ...
+│       └── 2025/
+│
+├── wp-config.php                        # WordPress configuration (SENSITIVE!)
+├── index.php                            # WordPress entry point
+├── wp-login.php                         # Login page
+└── (other WordPress core files...)
+
+
+Custom Post Types Created by Plugin:
+=====================================
+
+After activating the plugin, these new content types will be available:
+
+1. Artists           (Post Type: artist)
+   - Menu icon: 👥 (admin-users)
+   - Archive: /artist/
+   - Single: /artist/artist-name/
+
+2. Exhibitions       (Post Type: exhibition)
+   - Menu icon: 🖼️ (images-alt2)
+   - Archive: /exhibition/
+   - Single: /exhibition/exhibition-name/
+
+3. Events            (Post Type: event)
+   - Menu icon: 📅 (calendar)
+   - Archive: /event/
+   - Single: /event/event-name/
+
+4. Artworks          (Post Type: artwork)
+   - Menu icon: 🎨 (art)
+   - Archive: /artwork/
+   - Single: /artwork/artwork-name/
+
+
+Custom Taxonomies:
+==================
+
+1. Art Medium        (Taxonomy: art_medium)
+   - Applied to: Artworks
+   - Type: Hierarchical (like categories)
+   - Examples: Painting, Sculpture, Digital Art, Photography
+
+2. Exhibition Year   (Taxonomy: exhibition_year)
+   - Applied to: Exhibitions, Events, Artists, Artworks
+   - Type: Hierarchical
+   - Examples: 2024, 2025, 2026
+
+
+Template Files Priority (WordPress Template Hierarchy):
+========================================================
+
+Home Page:
+1. front-page.php (create this for custom home)
+2. home.php
+3. index.php ✓ (included)
+
+Single Post:
+1. single.php ✓ (included)
+2. index.php ✓ (included)
+
+Page:
+1. page-{slug}.php (e.g., page-about.php)
+2. page.php ✓ (included)
+3. index.php ✓ (included)
+
+Custom Post Type (e.g., Artist):
+1. single-artist.php (create this for custom single artist)
+2. single.php ✓ (included)
+3. index.php ✓ (included)
+
+Archive (e.g., Artists):
+1. archive-artist.php (create this for custom artists archive)
+2. archive.php (create this for general archives)
+3. index.php ✓ (included)
+
+Search Results:
+1. search.php (create this for custom search results)
+2. index.php ✓ (included)
+
+404 Error:
+1. 404.php (create this for custom 404 page)
+2. index.php ✓ (included)
+
+
+Files to Create Next (Optional Enhancements):
+==============================================
+
+High Priority:
+- screenshot.png (1200x900px) - Theme screenshot for admin
+- front-page.php - Custom home page template
+- archive-artist.php - Artists listing page
+- single-artist.php - Single artist page
+- archive-exhibition.php - Exhibitions listing
+- single-exhibition.php - Single exhibition page
+
+Medium Priority:
+- 404.php - Custom error page
+- search.php - Search results page
+- archive.php - General archive template
+- comments.php - Comments template
+
+Low Priority:
+- page-about.php - Custom about page
+- page-contact.php - Custom contact page
+- taxonomy-art_medium.php - Art medium archive
+- taxonomy-exhibition_year.php - Year archive
+
+
+Development Workflow:
+====================
+
+1. Install WordPress in htdocs folder
+2. Copy theme and plugin from this repo
+3. Activate theme and plugin in WordPress admin
+4. Start adding content
+5. Customize theme files as needed
+6. Commit changes back to this repository
+
+Only commit:
+✓ wp-content/themes/christiania-biennale/
+✓ wp-content/plugins/christiania-biennale-functionality/
+✓ Documentation files
+✓ docker-compose.yml
+✓ .gitignore
+
+Never commit:
+✗ Core WordPress files
+✗ wp-config.php
+✗ wp-content/uploads/
+✗ Other themes/plugins

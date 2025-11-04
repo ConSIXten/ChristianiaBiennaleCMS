@@ -1,0 +1,110 @@
+# WordPress Core Files
+/wp-admin/
+/wp-includes/
+/wp-content/index.php
+/wp-content/themes/twenty*/
+/wp-content/plugins/akismet/
+/wp-content/plugins/hello.php
+index.php
+license.txt
+readme.html
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-config.php
+wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+# WordPress Uploads and Cache
+/wp-content/uploads/
+/wp-content/cache/
+/wp-content/backup-db/
+/wp-content/backups/
+/wp-content/blogs.dir/
+/wp-content/upgrade/
+
+# WordPress Plugins (except custom ones)
+/wp-content/plugins/*
+!/wp-content/plugins/christiania-biennale-functionality/
+
+# WordPress Themes (except custom ones)
+/wp-content/themes/*
+!/wp-content/themes/christiania-biennale/
+
+# WordPress Language Files
+/wp-content/languages/
+
+# Advanced Custom Fields
+/wp-content/ai1wm-backups/
+
+# WP Engine specific
+/.smushit-status
+/.smushit-progress
+
+# Debug and Log Files
+wp-content/debug.log
+*.log
+error_log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE and Editor Files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary Files
+*.tmp
+*.temp
+/tmp/
+
+# Node Modules (if using npm/yarn for theme development)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build Files
+/dist/
+/build/
+*.min.css
+*.min.js
+
+# Environment Files
+.env
+.env.local
+.env.production
+.env.staging
+
+# Composer
+/vendor/
+composer.lock
+
+# Database Dumps
+*.sql
+*.sql.gz
+*.sql.zip
