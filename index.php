@@ -1,0 +1,55 @@
+<?php
+/**
+ * The main template file
+ * 
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * 
+ * @package ChristianiaBiennaleCMS
+ * @since 1.0.0
+ */
+
+get_header();
+?>
+
+<main id="primary" class="site-main">
+
+    <?php
+    if (have_posts()) :
+
+        if (is_home() && !is_front_page()) :
+            ?>
+            <header class="page-header">
+                <h1 class="page-title"><?php single_post_title(); ?></h1>
+            </header>
+            <?php
+        endif;
+
+        // Start the Loop
+        while (have_posts()) :
+            the_post();
+
+            // Include the post content template
+            get_template_part('template-parts/content', get_post_type());
+
+        endwhile;
+
+        // Previous/next page navigation
+        the_posts_pagination(array(
+            'prev_text' => __('Previous', 'christiania-biennale'),
+            'next_text' => __('Next', 'christiania-biennale'),
+        ));
+
+    else :
+
+        // No content found
+        get_template_part('template-parts/content', 'none');
+
+    endif;
+    ?>
+
+</main><!-- #primary -->
+
+<?php
+get_sidebar();
+get_footer();

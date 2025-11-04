@@ -1,0 +1,65 @@
+/*
+ * Layout Styles - Christiania Biennale CMS
+ * Ported from React project with WordPress adaptations
+ */
+
+/* WordPress Page/Site Structure */
+#page {
+    display: grid;
+    grid-template-columns:
+        [fullw-start]1.5rem [content-start] 1fr [content-end] 1.5rem[fullw-end];
+}
+
+@media screen and (width >=37.5rem) {
+    #page {
+        grid-template-columns:
+            [fullw-start]1.5rem [content-start] 1fr [content-end] 1.5rem[fullw-end];
+    }
+}
+
+@media screen and (width >=64rem) {
+    #page {
+        grid-template-columns:
+            [fullw-start]1fr [content-start] 60rem [content-end] 1fr[fullw-end];
+    }
+}
+
+@media screen and (max-width: 37.5rem) {
+    footer {
+        grid-column: fullw;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+header,
+main,
+footer {
+    grid-column: fullw;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+header>*,
+main>*,
+footer>* {
+    grid-column: content;
+    display: grid;
+    grid-template-columns: subgrid;
+}
+
+.columns {
+    grid-column: content;
+    display: grid;
+    grid-template-columns: subgrid;
+    gap: 1.5rem;
+}
+
+.no-columns {
+    grid-column: content;
+    display: block;
+}

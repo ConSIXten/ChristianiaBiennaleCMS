@@ -1,0 +1,19 @@
+/*
+ * Section Module Styles
+ * Christiania Biennale CMS Theme
+ */
+
+.section-stars-container {
+    width: 5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-stars {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}

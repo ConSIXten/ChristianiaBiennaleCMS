@@ -1,0 +1,46 @@
+/*
+ * Landing Page Module Styles
+ * Christiania Biennale CMS Theme
+ */
+
+.landing-page-stars-container {
+    width: 10rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-page-stars {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* Landing Page Menu Styles */
+#landing-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#landing-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+#landing-menu a,
+.landing-link {
+    color: #222;
+    text-decoration: none;
+    display: block;
+}
+
+#landing-menu a:hover,
+.landing-link:hover {
+    color: #FF33CC;
+}

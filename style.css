@@ -1,0 +1,34 @@
+/*
+Theme Name: Christiania Biennale CMS
+Theme URI: https://github.com/ConSIXten/ChristianiaBiennaleCMS
+Author: ConSIXten
+Author URI: https://github.com/ConSIXten
+Description: A modern WordPress theme for Christiania Biennale with React integration
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: christiania-biennale
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+*/
+
+/* Import Base Styles */
+@import url('css/base.css');
+
+/* Import Layout Styles */
+@import url('css/layout.css');
+
+/* Import Module Styles */
+@import url('css/modules/utilities.css');
+@import url('css/modules/landingpage.css');
+@import url('css/modules/section.css');
+@import url('css/modules/map.css');
+@import url('css/modules/poster.css');
+@import url('css/modules/header.css');
+@import url('css/modules/hero.css');
+@import url('css/modules/footer.css');

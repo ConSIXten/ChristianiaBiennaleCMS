@@ -1,0 +1,45 @@
+/*
+ * Map Module Styles
+ * Christiania Biennale CMS Theme
+ */
+
+.map-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.map-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map-container {
+    width: 30rem;
+    height: 25rem;
+    margin: 0;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+
+@media (max-width: 37.5rem) {
+    .map-container {
+        width: 20rem;
+        height: 20rem;
+    }
+}

@@ -1,0 +1,96 @@
+/*
+ * Base Styles - Christiania Biennale CMS
+ * Ported from React project
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Times New Roman', Times, serif
+}
+
+nav {
+    background-color: white;
+}
+
+span:hover {
+    color: #FF33CC;
+}
+
+p {
+    font-size: 3rem;
+    line-height: 74%;
+}
+
+footer {
+    position: anchor;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* WordPress Core Classes */
+.alignleft {
+    float: left;
+    margin-right: 2rem;
+}
+
+.alignright {
+    float: right;
+    margin-left: 2rem;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    max-width: 100%;
+}
+
+.wp-caption-text {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #666666;
+    margin-top: 0.5rem;
+}
+
+/* Accessibility */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #FF33CC;
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+}

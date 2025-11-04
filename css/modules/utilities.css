@@ -1,0 +1,178 @@
+/*
+ * Utilities Module Styles
+ * Christiania Biennale CMS Theme
+ */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Font styles for Cooper Black and Times New Roman */
+
+.font-cooper-black {
+    font-family: "cooper-black-std", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@media screen and (max-width: 37.5rem) {
+    .font-cooper-black {
+        font-size: 1.3rem;
+    }
+}
+
+.font-cooper-italic {
+    font-family: "cooper-black-std", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+@media screen and (max-width: 37.5rem) {
+    .font-cooper-italic {
+        font-size: 1.2rem;
+    }
+}
+
+.font-new-roman {
+    font-family: "times-new-roman", serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.font-new-roman_italic {
+    font-family: "times-new-roman", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.font-new-roman_italic-normal {
+    font-family: "times-new-roman", serif;
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+}
+
+@media screen and (max-width: 37.5rem) {
+    .font-new-roman_italic {
+        font-size: 1.2rem;
+    }
+}
+
+.font-new-roman_italic-big {
+    font-family: "times-new-roman", serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    font-style: italic;
+}
+
+@media screen and (max-width: 37.5rem) {
+    .font-new-roman_italic-big {
+        font-size: 1.2rem;
+    }
+}
+
+.letters {
+    letter-spacing: -0.05rem;
+}
+
+.font-size-xxxl {
+    font-size: 5rem;
+}
+
+.font-size-xxl {
+    font-size: 4rem;
+}
+
+.font-size-xl {
+    font-size: 2rem;
+}
+
+.font-size-xs {
+    font-size: 1rem;
+}
+
+.line-height-1 {
+    line-height: 0.9;
+}
+
+.font-white {
+    color: white;
+}
+
+.font-links {
+    color: #FF33CC;
+    text-decoration: underline;
+}
+
+/*------ Margin and Padding Utilities ------*/
+.margin-1 {
+    margin: 1rem;
+}
+
+.margin-top-0 {
+    margin-top: 1rem;
+}
+
+.margin-top-1 {
+    margin-top: 3rem;
+}
+
+.margin-top-2 {
+    margin-top: 5rem;
+}
+
+.margin-top-3 {
+    margin-top: 7rem;
+}
+
+.margin-block-1 {
+    margin-block: 1rem;
+}
+
+.margin-block-start-2 {
+    margin-block: 2rem;
+}
+
+.margin-bottom-3 {
+    margin-bottom: 13rem;
+}
+
+/*------- line height ------ */
+.line-height-1 {
+    line-height: 1;
+}
+
+.line-height-0 {
+    line-height: 0.8;
+}
+
+/*--------  Media -----*/
+
+@media screen and (max-width: 37.5rem) {
+    .responsive {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 37.5rem) {
+    .font-size-xxl {
+        font-size: 3rem;
+    }
+}
