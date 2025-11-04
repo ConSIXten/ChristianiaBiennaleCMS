@@ -23,14 +23,14 @@
                     <?php echo get_the_date(); ?>
                 </span>
                 <span class="byline">
-                    <?php esc_html_e('by', 'christiania-biennale'); ?> 
+                    <?php esc_html_e('by', 'christiania-biennale'); ?>
                     <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
                         <?php echo get_the_author(); ?>
                     </a>
                 </span>
                 <?php if (has_category()) : ?>
                     <span class="cat-links">
-                        <?php esc_html_e('in', 'christiania-biennale'); ?> 
+                        <?php esc_html_e('in', 'christiania-biennale'); ?>
                         <?php the_category(', '); ?>
                     </span>
                 <?php endif; ?>
