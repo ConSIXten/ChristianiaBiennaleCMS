@@ -38,6 +38,51 @@ a {
     color: inherit;
 }
 
+/* About Page Links */
+.about-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.about-link {
+    color: #FF33CC;
+    text-decoration: underline;
+    transition: opacity 0.2s ease;
+}
+
+.about-link:hover {
+    opacity: 0.8;
+}
+
+/* About Page Text Blocks */
+.about-text-block {
+    max-width: 960px;
+    padding: 0 2rem;
+}
+
+.about-footer-text {
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+@media screen and (max-width: 64rem) {
+
+    .about-text-block,
+    .about-footer-text {
+        padding: 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 37.5rem) {
+
+    .about-text-block,
+    .about-footer-text {
+        padding: 0 1rem;
+    }
+}
+
 /* WordPress Core Classes */
 .alignleft {
     float: left;

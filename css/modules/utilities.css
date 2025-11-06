@@ -63,7 +63,7 @@
 
 .font-new-roman_italic-normal {
     font-family: "times-new-roman", serif;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: normal;
     font-style: italic;
 }
@@ -120,6 +120,9 @@
     text-decoration: underline;
 }
 
+.list-style-none {
+    list-style: none;
+}
 /*------ Margin and Padding Utilities ------*/
 .margin-1 {
     margin: 1rem;
@@ -133,6 +136,10 @@
     margin-top: 3rem;
 }
 
+.margin-top-1_5 {
+    margin-top: 1.5rem;
+}
+
 .margin-top-2 {
     margin-top: 5rem;
 }
@@ -143,6 +150,10 @@
 
 .margin-block-1 {
     margin-block: 1rem;
+}
+
+.margin-bottom-1_5{
+    margin-bottom: 1.5rem;
 }
 
 .margin-block-start-2 {

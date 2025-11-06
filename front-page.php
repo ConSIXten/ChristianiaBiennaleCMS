@@ -25,7 +25,7 @@ get_template_part('parts/header');
         </figure>
         
         <!-- Main Navigation Links - From WordPress Primary Menu -->
-        <nav class="flex flex-column font-cooper-italic text-center font-size-xxl">
+        <nav class="list-style-none flex flex-column text-center font-size-xxl">
             <?php
             // Display WordPress Primary Menu
             wp_nav_menu(array(

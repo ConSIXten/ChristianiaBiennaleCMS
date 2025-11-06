@@ -162,10 +162,68 @@ get_template_part('parts/header');
             <?php endif; ?>
         </div>
         
+        <!-- Stars Divider -->
+        <figure class="section-stars-container margin-1">
+            <img class="section-stars" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/hjemmeside-03.png'); ?>" alt="stars" />
+        </figure>
+        
+        <!-- Event 6 -->
+        <?php if (get_theme_mod('event_6_title')): ?>
+        <div>
+            <h2 class="font-cooper-black font-size-xl line-height-0 margin-1 letters">
+                <?php echo esc_html(get_theme_mod('event_6_title', '')); ?>
+            </h2>
+            <?php if (get_theme_mod('event_6_artists')): ?>
+            <p class="font-new-roman_italic letters">
+                <?php echo wp_kses_post(get_theme_mod('event_6_artists', '')); ?>
+            </p>
+            <?php endif; ?>
+            <?php if (get_theme_mod('event_6_description')): ?>
+            <p class="font-size-xs margin-1 line-height-1 font-new-roman_italic-normal">
+                <?php echo wp_kses_post(get_theme_mod('event_6_description', '')); ?>
+            </p>
+            <?php endif; ?>
+            <?php if (get_theme_mod('event_6_details')): ?>
+            <div class="font-size-xs font-new-roman_italic margin-1 line-height-1">
+                <?php echo wp_kses_post(get_theme_mod('event_6_details', '')); ?>
+            </div>
+            <?php endif; ?>
+        </div>
+        
+        <!-- Stars Divider -->
+        <figure class="section-stars-container margin-1">
+            <img class="section-stars" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/hjemmeside-03.png'); ?>" alt="stars" />
+        </figure>
+        <?php endif; ?>
+        
+        <!-- Event 7 -->
+        <?php if (get_theme_mod('event_7_title')): ?>
+        <div>
+            <h2 class="font-cooper-black font-size-xl line-height-0 margin-1 letters">
+                <?php echo esc_html(get_theme_mod('event_7_title', '')); ?>
+            </h2>
+            <?php if (get_theme_mod('event_7_artists')): ?>
+            <p class="font-new-roman_italic letters">
+                <?php echo wp_kses_post(get_theme_mod('event_7_artists', '')); ?>
+            </p>
+            <?php endif; ?>
+            <?php if (get_theme_mod('event_7_description')): ?>
+            <p class="font-size-xs margin-1 line-height-1 font-new-roman_italic-normal">
+                <?php echo wp_kses_post(get_theme_mod('event_7_description', '')); ?>
+            </p>
+            <?php endif; ?>
+            <?php if (get_theme_mod('event_7_details')): ?>
+            <div class="font-size-xs font-new-roman_italic margin-1 line-height-1">
+                <?php echo wp_kses_post(get_theme_mod('event_7_details', '')); ?>
+            </div>
+            <?php endif; ?>
+        </div>
+        
         <!-- Bottom Stars -->
         <figure class="section-stars-container margin-1">
             <img class="section-stars" src="<?php echo esc_url(get_template_directory_uri() . '/assets/images/hjemmeside-03.png'); ?>" alt="stars" />
         </figure>
+        <?php endif; ?>
         
     </article>
 

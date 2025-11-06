@@ -254,6 +254,96 @@ function christiania_biennale_customize_register($wp_customize) {
         'type'     => 'textarea',
     ));
     
+    // Event 6
+    $wp_customize->add_setting('event_6_title', array(
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    
+    $wp_customize->add_control('event_6_title', array(
+        'label'    => __('Event 6 - Title', 'christiania-biennale'),
+        'section'  => 'events_page_section',
+        'type'     => 'text',
+    ));
+    
+    $wp_customize->add_setting('event_6_artists', array(
+        'default'           => '',
+        'sanitize_callback' => 'wp_kses_post',
+    ));
+    
+    $wp_customize->add_control('event_6_artists', array(
+        'label'    => __('Event 6 - Artists', 'christiania-biennale'),
+        'section'  => 'events_page_section',
+        'type'     => 'textarea',
+    ));
+    
+    $wp_customize->add_setting('event_6_description', array(
+        'default'           => '',
+        'sanitize_callback' => 'wp_kses_post',
+    ));
+    
+    $wp_customize->add_control('event_6_description', array(
+        'label'    => __('Event 6 - Description', 'christiania-biennale'),
+        'section'  => 'events_page_section',
+        'type'     => 'textarea',
+    ));
+    
+    $wp_customize->add_setting('event_6_details', array(
+        'default'           => '',
+        'sanitize_callback' => 'wp_kses_post',
+    ));
+    
+    $wp_customize->add_control('event_6_details', array(
+        'label'    => __('Event 6 - Details', 'christiania-biennale'),
+        'section'  => 'events_page_section',
+        'type'     => 'textarea',
+    ));
+    
+    // Event 7
+    $wp_customize->add_setting('event_7_title', array(
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    
+    $wp_customize->add_control('event_7_title', array(
+        'label'    => __('Event 7 - Title', 'christiania-biennale'),
+        'section'  => 'events_page_section',
+        'type'     => 'text',
+    ));
+    
+    $wp_customize->add_setting('event_7_artists', array(
+        'default'           => '',
+        'sanitize_callback' => 'wp_kses_post',
+    ));
+    
+    $wp_customize->add_control('event_7_artists', array(
+        'label'    => __('Event 7 - Artists', 'christiania-biennale'),
+        'section'  => 'events_page_section',
+        'type'     => 'textarea',
+    ));
+    
+    $wp_customize->add_setting('event_7_description', array(
+        'default'           => '',
+        'sanitize_callback' => 'wp_kses_post',
+    ));
+    
+    $wp_customize->add_control('event_7_description', array(
+        'label'    => __('Event 7 - Description', 'christiania-biennale'),
+        'section'  => 'events_page_section',
+        'type'     => 'textarea',
+    ));
+    
+    $wp_customize->add_setting('event_7_details', array(
+        'default'           => '',
+        'sanitize_callback' => 'wp_kses_post',
+    ));
+    
+    $wp_customize->add_control('event_7_details', array(
+        'label'    => __('Event 7 - Details', 'christiania-biennale'),
+        'section'  => 'events_page_section',
+        'type'     => 'textarea',
+    ));
+    
     /**
      * Programme Page Section
      */
@@ -357,5 +447,100 @@ function christiania_biennale_customize_register($wp_customize) {
         'section'    => 'programme_page_section',
         'mime_type'  => 'image',
     )));
+    
+    /**
+     * About Page Section
+     */
+    $wp_customize->add_section('about_page_section', array(
+        'title'    => __('About Page Content', 'christiania-biennale'),
+        'priority' => 32,
+    ));
+    
+    // Contact Link Text
+    $wp_customize->add_setting('about_contact_text', array(
+        'default'           => 'Contact',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    
+    $wp_customize->add_control('about_contact_text', array(
+        'label'    => __('Contact Link Text', 'christiania-biennale'),
+        'section'  => 'about_page_section',
+        'type'     => 'text',
+    ));
+    
+    // Contact Link URL
+    $wp_customize->add_setting('about_contact_url', array(
+        'default'           => 'mailto:info@christianiabiennale.com',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    
+    $wp_customize->add_control('about_contact_url', array(
+        'label'    => __('Contact Link URL (email or page)', 'christiania-biennale'),
+        'section'  => 'about_page_section',
+        'type'     => 'text',
+    ));
+    
+    // Instagram Link Text
+    $wp_customize->add_setting('about_instagram_text', array(
+        'default'           => 'Instagram',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    
+    $wp_customize->add_control('about_instagram_text', array(
+        'label'    => __('Instagram Link Text', 'christiania-biennale'),
+        'section'  => 'about_page_section',
+        'type'     => 'text',
+    ));
+    
+    // Instagram Link URL
+    $wp_customize->add_setting('about_instagram_url', array(
+        'default'           => 'https://www.instagram.com/christianiabiennale',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+    
+    $wp_customize->add_control('about_instagram_url', array(
+        'label'    => __('Instagram URL', 'christiania-biennale'),
+        'section'  => 'about_page_section',
+        'type'     => 'url',
+    ));
+    
+    // First Text Block
+    $wp_customize->add_setting('about_text_block_1', array(
+        'default'           => '',
+        'sanitize_callback' => 'wp_kses_post',
+    ));
+    
+    $wp_customize->add_control('about_text_block_1', array(
+        'label'       => __('First Text Block', 'christiania-biennale'),
+        'description' => __('Large paragraph about the Biennale history', 'christiania-biennale'),
+        'section'     => 'about_page_section',
+        'type'        => 'textarea',
+    ));
+    
+    // Second Text Block
+    $wp_customize->add_setting('about_text_block_2', array(
+        'default'           => '',
+        'sanitize_callback' => 'wp_kses_post',
+    ));
+    
+    $wp_customize->add_control('about_text_block_2', array(
+        'label'       => __('Second Text Block', 'christiania-biennale'),
+        'description' => __('Large paragraph about the premium premiere edition', 'christiania-biennale'),
+        'section'     => 'about_page_section',
+        'type'        => 'textarea',
+    ));
+    
+    // Footer Text
+    $wp_customize->add_setting('about_footer_text', array(
+        'default'           => 'Christiania Biennale is a non-profit organisation supported by Fake Foundation, Wonderful Copenhagen and Forandringsplanen for Pusherstreet',
+        'sanitize_callback' => 'sanitize_text_field',
+    ));
+    
+    $wp_customize->add_control('about_footer_text', array(
+        'label'       => __('Footer Text', 'christiania-biennale'),
+        'description' => __('Small text at the bottom about the organisation', 'christiania-biennale'),
+        'section'     => 'about_page_section',
+        'type'        => 'textarea',
+    ));
 }
 add_action('customize_register', 'christiania_biennale_customize_register');
